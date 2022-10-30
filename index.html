@@ -10,74 +10,74 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="navbar-logo">
-                <a href="index.html"<h2>Travel Site</h2></a>
-            </div>
-            <div class="navbar-links">
-                <ul class="navbar-links__ul">
-                    <a href=""><li class="navbar-links__item">Home</li></a>
-                    <a href=""><li class="navbar-links__item">Hawaii</li></a>
-                    <a href=""><li class="navbar-links__item">Iceland</li></a>
-                    <a href=""><li class="navbar-links__item">Greece</li></a> 
-                </ul>
-            </div>
+    <header class="navbar">
+        <div class="navbar__heading">
+            <h2><a href="index.html">Travel Site</a></h2>
+        </div>
+        <ul class="navbar__items">
+            <li class="navbar__item"><a href="index.html">Home</a></li>
+            <li class="navbar__item"><a href="/pages/hawaii.html">Hawaii</a></li>
+            <li class="navbar__item"><a href="/pages/iceland.html">Iceland</a></li>
+            <li class="navbar__item"><a href="/pages/greece.html">Greece</a></li>        
+        </ul>
     </header>
     <main>
-        <section class="hero-section">
-            <div class="hero-text">
-                <h1 class="hero-text__header">Travelling Comes With Endless Discoveries</h1>
-                <p class="hero-text__subheader">Don't let your dreams just be dreams. Experience the world by booking a vacation with us now.</p>
-                <button class="hero-text__button">Get Started</button>
-            </div>
-            <img class="hero-section__img" src="">
+        <section class="hero">
+            <article class="hero__article">
+                <h1 class="hero__header">Travelling Comes With Endless Discoveries</h1>
+                <p class="hero__subheader">Don't let your dreams just be dreams. Experience the world by booking a vacation with us now.</p>
+                <button class="hero__button">Get started</button>
+            </article>
+            <img class="hero__img" src="/assets/images/hero.png" alt="Hero section image">
         </section>
-        <section class="recommendations">
-            <div class="recommendations-gallery">
-                <a href="/pages/hawaii.html"><div class="recommendations-card">
-                    <h2 class="recommendations-card__header">Hawaii</h2>
+        <article class="recommendations">
+            <h2 class="recommendations__header">Recommendations</h2>
+            <section class="recommendations__section">
+                <a href="/pages/hawaii.html"><div class="card card-hawaii">
+                    <h2 class="card__header">Hawaii</h2>
                 </div></a>
-                <a href="/pages/iceland.html"><div class="recommendations-card">
-                    <h2 class="recommendations-card__header">Iceland</h2>
+                <a href="/pages/iceland.html"><div class="card card-iceland">
+                    <h2 class="card__header">Iceland</h2>
                 </div></a>
-                <a href="/pages/greece.html"><div class="recommendations-card">
-                    <h2 class="recommendations-card__header">Greece</h2>
+                <a href="/pages/greece.html"><div class="card card-greece">
+                    <h2 class="card__header">Greece</h2>
                 </div></a>
-            </div>
-        </section>
+            </section>
+        </article>
     </main>
     <footer>
-        <div class="footer-contact">
-            <h2 class="footer-contact__header">Contact</h2>
-            <div class="footer-contact__info">
-                <p class="footer-subject">EMAIL</p>
-                <p class="footer-content">info@travelsite.com</p>
+        <section class="contact__section">
+            <h2 class="contact__header">Contact</h2>
+            <div class="contact__content">
+                <p class="contact__subject">EMAIL</p>
+                <p class="contact__info">info@travelsite.com</p>
             </div>
-        </div>
-        <div class="footer-hours">
-            <h2 class="footer-hours__header">Hours</h2>
-            <div class="footer-hours__info">
-                <p class="footer-subject">MONDAY - FRIDAY</p>
-                <p class="footer-content">9:00 AM - 5:00 PM</p>
+        </section>
+        <section class="hours__section">
+            <h2 class="hours__header">Hours</h2>
+            <div class="hours__container">
+                <div class="hours__content">
+                    <p class="hours__subject">MONDAY - FRIDAY</p>
+                    <p class="hours__info">9:00 AM - 5:00 PM</p>
+                </div>
+                <div class="hours__content">
+                    <p class="hours__subject">SATURDAY</p>
+                    <p class="hours__info">10:00 AM - 4:00 PM</p>
+                </div>
+                <div class="hours__content">
+                    <p class="hours__subject">SUNDAY</p>
+                    <p class="hours__info">Closed</p>
+                </div>
             </div>
-            <div class="footer-hours__info">
-                <p class="footer-subject">SATURDAY</p>
-                <p class="footer-content">10:00 AM - 4:00 PM</p>
+        </section>
+        <section class="social__section">
+            <h2 class="social__header">Social</h2>
+            <div class="social__icons">
+                <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
             </div>
-            <div class="footer-hours__info">
-                <p class="footer-subject">SUNDAY</p>
-                <p class="footer-content">Closed</p>
-            </div>
-        </div>
-        <div class="footer-social">
-            <h2 class="footer-social__header">Social</h2>
-            <div class="footer-social__icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-        </div>
+        </section>
     </footer>
 </body>
 </html>

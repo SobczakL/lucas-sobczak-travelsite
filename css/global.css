@@ -2,3 +2,133 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: verdana;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    padding-top: 4rem;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background: #ffffff;
+    width: 100vw;
+    height: 4rem;
+}
+
+.navbar__heading {
+    position: relative;
+    left: 5rem;
+}
+
+.navbar__heading a {
+    color: #335576;
+}
+
+.navbar__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.navbar__item {
+    position: relative;
+    right: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width:fit-content;
+    padding-bottom: .5rem;
+}
+
+.navbar__item-active::after {
+    border-bottom: 2px solid #db7a4e;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background:#fefaf5;
+    gap: 4rem;
+    padding: 3rem;
+}
+
+.contact__section {
+    color:#335576;
+    display: flex;
+    gap: 2rem;
+    align-items: left;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact__content {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.contact__subject {
+    font-size: .75rem;
+    color:#db7a4e
+}
+
+.hours__section {
+    color:#335576;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: left;
+}
+
+.hours__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+.hours__content {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.hours__subject {
+    font-size: .75rem;
+    color:#db7a4e
+}
+
+.social__section {
+    color:#335576;
+    display: flex;
+    gap: 2rem;
+    align-items: left;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social__icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.fa-brands {
+    color:#335576;
+}
+
