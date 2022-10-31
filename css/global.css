@@ -52,12 +52,19 @@ a {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-    width:fit-content;
-    padding-bottom: .5rem;
+    align-items: center;
+    height: 2.5rem;
+    width: 4rem;
+    /* padding-bottom: .5rem; */
+
 }
 
-.navbar__item-active::after {
+.navbar__item:hover {
+    border: 2px solid #fafafa;
     border-bottom: 2px solid #db7a4e;
+    border-radius: 5px;
+    background: #fafafa;
+    box-shadow:  5px 5px 80px #bcbcbc,-5px -5px 80px #ffffff;
 }
 
 footer {
@@ -86,6 +93,10 @@ footer {
 .contact__subject {
     font-size: .75rem;
     color:#db7a4e
+}
+
+.contact__info {
+    cursor: pointer;
 }
 
 .hours__section {

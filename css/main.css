@@ -36,7 +36,15 @@
     height: 2.5rem;
     font-size: 1.1rem;
     border-radius: 30px;
+    cursor: pointer;
 }
+
+.hero__button:hover {
+    border-radius: 30px;
+    border:2px solid #fffdfa;
+    box-shadow:  9px 9px 18px #f0eeeb,-9px -9px 18px #ffffff;
+}
+
 
 .hero__img {
     max-width: 30%;
@@ -69,6 +77,11 @@
     box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.2);
     width: 230px;
     height: 340px;
+}
+
+.card:hover {
+    border-radius: 5px;
+    box-shadow:  20px 20px 18px #f0f0f0,-20px -20px 18px #ffffff;
 }
 
 .card-hawaii {
